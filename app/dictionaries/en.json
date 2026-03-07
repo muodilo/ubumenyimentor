@@ -1,0 +1,13 @@
+{
+  "home": {
+    "title": "Welcome",
+    "button": "Hello",
+    "languageLabel": "Language"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  }
+}

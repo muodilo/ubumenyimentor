@@ -12,7 +12,19 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
-export function ModeToggle() {
+type ModeToggleProps = {
+  labelLight: string
+  labelDark: string
+  labelSystem: string
+  toggleLabel?: string
+}
+
+export function ModeToggle({
+  labelLight,
+  labelDark,
+  labelSystem,
+  toggleLabel = "Toggle theme",
+}: ModeToggleProps) {
   const { setTheme } = useTheme()
 
   const [mounted, setMounted] = React.useState(false)
@@ -31,18 +43,18 @@ export function ModeToggle() {
         <Button variant="outline" size="icon">
           <Sun className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
           <Moon className="absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
-          <span className="sr-only">Toggle theme</span>
+          <span className="sr-only">{toggleLabel}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => setTheme("light")}>
-          Light
+          {labelLight}
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("dark")}>
-          Dark
+          {labelDark}
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("system")}>
-          System
+          {labelSystem}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

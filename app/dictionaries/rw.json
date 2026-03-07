@@ -1,0 +1,13 @@
+{
+  "home": {
+    "title": "Murakaza neza",
+    "button": "Muraho",
+    "languageLabel": "Ururimi"
+  },
+  "theme": {
+    "toggle": "Hindura insanganyamatsiko",
+    "light": "Irumuri",
+    "dark": "Icyijimye",
+    "system": "Sisitemu"
+  }
+}

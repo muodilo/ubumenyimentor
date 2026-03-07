@@ -1,12 +1,5 @@
-import { ModeToggle } from "@/components/mode-toggle";
-import { Button } from "@/components/ui/button";
+import { redirect } from "next/navigation";
 
-
-export default function Home() {
-  return (
-    <div>
-      <ModeToggle/>
-      <Button>Hello</Button>
-    </div>
-  );
+export default function RootPage() {
+  redirect("/en");
 }
