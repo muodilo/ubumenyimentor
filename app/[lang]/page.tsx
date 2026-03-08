@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 
 import { getDictionary, hasLocale } from "../dictionaries";
 import NavBar from "@/components/navbar";
+import HeroSection from "@/components/HeroSection";
 
 export default async function HomePage({
   params,
@@ -17,11 +18,7 @@ export default async function HomePage({
   return (
     <main className="">
       <NavBar lang={lang} dict={dict} />
-      <section className="py-10 px-5 md:px-16 lg:px-30 bg-[#fff0e7] dark:bg-background ">
-        <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">
-          {dict.home.title}
-        </h1>
-      </section>
+      <HeroSection  dict={dict}/>
     </main>
   );
 }
