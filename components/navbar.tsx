@@ -35,8 +35,8 @@ export function Navbar({ lang, dict }: NavbarProps) {
   const signinHref = `/${lang}/signin`;
 
   return (
-    <header className="sticky top-0 z-50  backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
+    <header className="sticky top-0 z-50  backdrop-blur px-5 md:px-16 lg:px-30 bg-[#fff0e7] dark:bg-background border-b">
+      <div className=" flex  items-center justify-between gap-3  py-3">
         <Link href={homeHref} className="flex items-center gap-2">
           <Logo />
         </Link>

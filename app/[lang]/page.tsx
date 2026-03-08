@@ -15,9 +15,9 @@ export default async function HomePage({
   const dict = await getDictionary(lang);
 
   return (
-    <main className="px-5 md:px-16 lg:px-30">
+    <main className="">
       <NavBar lang={lang} dict={dict} />
-      <section className="mx-auto max-w-6xl py-10">
+      <section className="py-10 px-5 md:px-16 lg:px-30 bg-[#fff0e7] dark:bg-background ">
         <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">
           {dict.home.title}
         </h1>
