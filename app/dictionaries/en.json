@@ -9,5 +9,11 @@
     "light": "Light",
     "dark": "Dark",
     "system": "System"
+  },
+  "nav": {
+    "brand": "Ubumenyi Mentor",
+    "features": "Features",
+    "pricing": "Pricing",
+    "signin": "Sign in"
   }
 }

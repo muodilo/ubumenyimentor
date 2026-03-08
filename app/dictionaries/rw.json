@@ -9,5 +9,11 @@
     "light": "Irumuri",
     "dark": "Icyijimye",
     "system": "Sisitemu"
+  },
+  "nav": {
+    "brand": "Ubumenyi Mentor",
+    "features": "Ibiranga",
+    "pricing": "Ibiciro",
+    "signin": "Injira"
   }
 }
