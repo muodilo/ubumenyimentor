@@ -17,5 +17,13 @@
     "features": "Features",
     "pricing": "Pricing",
     "signin": "Sign in"
+  },
+  "sidebar": {
+    "toggle": "Toggle sidebar",
+    "mobileTitle": "Sidebar",
+    "mobileDescription": "Displays the mobile sidebar.",
+    "dashboard": "Dashboard",
+    "my courses": "My courses",
+    "settings": "Settings"
   }
 }

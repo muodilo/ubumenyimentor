@@ -17,5 +17,13 @@
     "features": "Fonctionnalités",
     "pricing": "Tarifs",
     "signin": "Se connecter"
+  },
+  "sidebar": {
+    "toggle": "Basculer la barre latérale",
+    "mobileTitle": "Barre latérale",
+    "mobileDescription": "Affiche la barre latérale mobile.",
+    "dashboard": "Tableau de bord",
+    "my courses": "Mes cours",
+    "settings": "Paramètres"
   }
 }

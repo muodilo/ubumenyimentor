@@ -17,5 +17,13 @@
     "features": "Ibiranga",
     "pricing": "Ibiciro",
     "signin": "Injira"
+  },
+  "sidebar": {
+    "toggle": "Hindura urubuga rw'imbere",
+    "mobileTitle": "Urubuga rw'imbere",
+    "mobileDescription": "Erekana urubuga rw'imbere ku gikoresho cyimukanwa.",
+    "dashboard": "Urupapuro rw'akazi",
+    "my courses": "Amasomo yanjye",
+    "settings": "Imiterere"
   }
 }
