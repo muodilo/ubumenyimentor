@@ -18,7 +18,7 @@ export default async function DashboardLayout({
   params,
 }: {
   children: React.ReactNode;
-  params:{lang:string}
+  params: Promise<{ lang: string }>;
 }) {
 const {lang} = await params
 
