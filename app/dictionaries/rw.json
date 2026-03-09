@@ -1,6 +1,8 @@
 {
   "home": {
-    "title": "Murakaza neza",
+    "title": "Tegura ejo hazaza hawe binyuze mu burezi bufite ireme.",
+    "subtitle": "Iga hamwe na barimu b’inzobere, igihe icyo ari cyo cyose n’aho uri hose.",
+    "sylogan": "Iga hamwe na barimu beza kurusha abandi",
     "button": "Muraho",
     "languageLabel": "Ururimi"
   },
@@ -9,5 +11,19 @@
     "light": "Irumuri",
     "dark": "Icyijimye",
     "system": "Sisitemu"
+  },
+  "nav": {
+    "brand": "Ubumenyi Mentor",
+    "features": "Ibiranga",
+    "pricing": "Ibiciro",
+    "signin": "Injira"
+  },
+  "sidebar": {
+    "toggle": "Hindura urubuga rw'imbere",
+    "mobileTitle": "Urubuga rw'imbere",
+    "mobileDescription": "Erekana urubuga rw'imbere ku gikoresho cyimukanwa.",
+    "dashboard": "Urupapuro rw'akazi",
+    "my courses": "Amasomo yanjye",
+    "settings": "Imiterere"
   }
 }

@@ -1,6 +1,8 @@
 {
   "home": {
-    "title": "Bienvenue",
+    "title": "Débloquez votre avenir grâce à une éducation de qualité",
+    "subtitle": "Apprenez auprès d’instructeurs experts, à tout moment et partout.",
+    "sylogan": "Apprenez avec les meilleurs instructeurs",
     "button": "Bonjour",
     "languageLabel": "Langue"
   },
@@ -9,5 +11,19 @@
     "light": "Clair",
     "dark": "Sombre",
     "system": "Système"
+  },
+  "nav": {
+    "brand": "Ubumenyi Mentor",
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "signin": "Se connecter"
+  },
+  "sidebar": {
+    "toggle": "Basculer la barre latérale",
+    "mobileTitle": "Barre latérale",
+    "mobileDescription": "Affiche la barre latérale mobile.",
+    "dashboard": "Tableau de bord",
+    "my courses": "Mes cours",
+    "settings": "Paramètres"
   }
 }

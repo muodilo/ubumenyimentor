@@ -1,6 +1,8 @@
 {
   "home": {
-    "title": "Welcome",
+    "title": "Unlock Your Future With Quality Education",
+    "subtitle": "Learn from expert instructors, anytime, anywhere.",
+    "sylogan": "Learn with the best instructors",
     "button": "Hello",
     "languageLabel": "Language"
   },
@@ -9,5 +11,19 @@
     "light": "Light",
     "dark": "Dark",
     "system": "System"
+  },
+  "nav": {
+    "brand": "Ubumenyi Mentor",
+    "features": "Features",
+    "pricing": "Pricing",
+    "signin": "Sign in"
+  },
+  "sidebar": {
+    "toggle": "Toggle sidebar",
+    "mobileTitle": "Sidebar",
+    "mobileDescription": "Displays the mobile sidebar.",
+    "dashboard": "Dashboard",
+    "my courses": "My courses",
+    "settings": "Settings"
   }
 }
