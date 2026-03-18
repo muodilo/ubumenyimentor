@@ -1,8 +1,13 @@
-export default function SigninPage() {
+import { overviewPages } from "./components/overview-pages";
+export default function Dashboard() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center  p-4">
-      <h1 className="text-2xl font-bold">Dahboard</h1>
-      <p>Welcome back</p>
+    <div className="">
+       {overviewPages 
+       .filter(page=>page.roles.includes('TEACHER'))
+       .map(({id,components:Page})=>{
+        return <Page key={id}/>
+       })
+       }
     </div>
   );
 }   

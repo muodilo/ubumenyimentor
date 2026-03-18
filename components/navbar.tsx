@@ -3,9 +3,10 @@
 import Link from "next/link";
 import { MenuIcon } from "lucide-react";
 import { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
 
 import Logo from "@/components/Logo";
-import { LanguageSwitcher } from "@/components/language-switcher";
+import { ClientLanguageSwitcher } from "@/components/ClientLanguageSwitcher";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
 import {
@@ -99,7 +100,7 @@ export function Navbar({ lang, dict }: NavbarProps) {
             </Link>
           </nav>
 
-          <LanguageSwitcher label={dict.home.languageLabel} />
+          <ClientLanguageSwitcher label={dict.home.languageLabel} />
           <ModeToggle
             labelLight={dict.theme.light}
             labelDark={dict.theme.dark}
