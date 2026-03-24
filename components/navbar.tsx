@@ -1,9 +1,13 @@
+"use client"
+
 import Link from "next/link";
-import { MenuIcon } from "lucide-react";
+import dynamic from "next/dynamic";
 
 import Logo from "@/components/Logo";
-import { LanguageSwitcher } from "@/components/language-switcher";
+import { ClientLanguageSwitcher } from "@/components/ClientLanguageSwitcher";
 import { ModeToggle } from "@/components/mode-toggle";
+import { Button } from "@/components/ui/button";
+import { MobileMenu } from "@/components/MobileMenu";
 
 type NavbarDictionary = {
   home: {
@@ -14,6 +18,9 @@ type NavbarDictionary = {
     features: string;
     pricing: string;
     signin: string;
+    signup: string;
+    mobileMenuTitle: string;
+    mobileMenuDescription: string;
   };
   theme: {
     toggle: string;
@@ -33,6 +40,7 @@ export function Navbar({ lang, dict }: NavbarProps) {
   const featuresHref = `/${lang}#features`;
   const pricingHref = `/${lang}#pricing`;
   const signinHref = `/${lang}/signin`;
+  const signupHref = `/${lang}/signup`;
 
   return (
     <header className="sticky top-0 z-50  backdrop-blur px-5 md:px-16 lg:px-30 bg-[#fff0e7] dark:bg-background border-b">
@@ -41,20 +49,35 @@ export function Navbar({ lang, dict }: NavbarProps) {
           <Logo />
         </Link>
 
-        <nav className="hidden items-center gap-6 text-sm md:flex">
-          <Link href={featuresHref} className="hover:text-primary">
-            {dict.nav.features}
-          </Link>
-          <Link href={pricingHref} className="hover:text-primary">
-            {dict.nav.pricing}
-          </Link>
-          <Link href={signinHref} className="hover:text-primary">
-            {dict.nav.signin}
-          </Link>
+        <nav className="hidden lg:flex lg:items-center lg:gap-6">
+          <ul className="flex items-center gap-6 text-sm">
+            <li>
+              <Link href={featuresHref} className="hover:text-primary">
+                {dict.nav.features}
+              </Link>
+            </li>
+            <li>
+              <Link href={pricingHref} className="hover:text-primary">
+                {dict.nav.pricing}
+              </Link>
+            </li>
+          </ul>
         </nav>
 
-        <div className="flex items-center gap-2">
-          <LanguageSwitcher label={dict.home.languageLabel} />
+        <div className="flex items-center gap-4">
+          <nav className="hidden lg:flex items-center gap-4">
+            <Link href={signinHref} className=" rounded-full bg-[#ff7500] px-4 py-1 text-sm text-white hover:bg-[#ff7500] border border-[#ff7500]">
+              {dict.nav.signin}
+            </Link>
+            <Link
+              href={signupHref}
+              className="px-2 py-1 rounded-full border border-[#ff7500] text-[#ff7500] hover:bg-[#ff7500] hover:text-white duration-150"
+            >
+              {dict.nav.signup}
+            </Link>
+          </nav>
+
+          <ClientLanguageSwitcher label={dict.home.languageLabel} />
           <ModeToggle
             labelLight={dict.theme.light}
             labelDark={dict.theme.dark}
@@ -62,33 +85,7 @@ export function Navbar({ lang, dict }: NavbarProps) {
             toggleLabel={dict.theme.toggle}
           />
 
-          <details className="relative md:hidden">
-            <summary className="list-none rounded-md border px-2.5 py-2 text-sm hover:bg-muted focus:outline-none focus-visible:ring-2 focus-visible:ring-ring/50">
-              <span className="sr-only">Menu</span>
-              <MenuIcon className="h-4 w-4" />
-            </summary>
-
-            <div className="absolute right-0 mt-2 w-48 rounded-lg border bg-popover p-2 shadow-md">
-              <Link
-                href={featuresHref}
-                className="block rounded-md px-3 py-2 text-sm hover:bg-muted"
-              >
-                {dict.nav.features}
-              </Link>
-              <Link
-                href={pricingHref}
-                className="block rounded-md px-3 py-2 text-sm hover:bg-muted"
-              >
-                {dict.nav.pricing}
-              </Link>
-              <Link
-                href={signinHref}
-                className="block rounded-md px-3 py-2 text-sm hover:bg-muted"
-              >
-                {dict.nav.signin}
-              </Link>
-            </div>
-          </details>
+          <MobileMenu lang={lang} dict={dict} />
         </div>
       </div>
     </header>

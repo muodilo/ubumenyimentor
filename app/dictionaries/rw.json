@@ -16,7 +16,10 @@
     "brand": "Ubumenyi Mentor",
     "features": "Ibiranga",
     "pricing": "Ibiciro",
-    "signin": "Injira"
+    "signin": "Injira",
+    "signup": "Iyandikishe",
+    "mobileMenuTitle": "Ubugari",
+    "mobileMenuDescription": "Menu y'ubugari ku gikoresho cyimukanwa"
   },
   "sidebar": {
     "toggle": "Hindura urubuga rw'imbere",

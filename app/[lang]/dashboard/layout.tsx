@@ -12,7 +12,7 @@ import {
 import Link from "next/link";
 import { ReactNode } from "react";
 import { notFound } from "next/navigation";
-import { LanguageSwitcher } from "@/components/language-switcher";
+import { ClientLanguageSwitcher } from "@/components/ClientLanguageSwitcher";
 export default async function DashboardLayout({
   children,
   params,
@@ -56,7 +56,7 @@ const dict = await getDictionary(lang)
             className="flex-1 gap-2
            flex justify-end items-center h-full"
           >
-            <LanguageSwitcher label={dict.home.languageLabel} />
+            <ClientLanguageSwitcher label={dict.home.languageLabel} />
             <ModeToggle
               labelLight={dict.theme.light}
               labelDark={dict.theme.dark}

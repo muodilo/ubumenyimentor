@@ -16,7 +16,10 @@
     "brand": "Ubumenyi Mentor",
     "features": "Fonctionnalités",
     "pricing": "Tarifs",
-    "signin": "Se connecter"
+    "signin": "Se connecter",
+    "signup": "S'inscrire",
+    "mobileMenuTitle": "Navigation",
+    "mobileMenuDescription": "Menu de navigation mobile"
   },
   "sidebar": {
     "toggle": "Basculer la barre latérale",
