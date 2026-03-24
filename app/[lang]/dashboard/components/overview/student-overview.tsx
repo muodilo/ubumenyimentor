@@ -1,3 +1,4 @@
+import AddCourseModal from "@/components/custom/AddCourseModal";
 import { PlusIcon } from "lucide-react";
 
 export const StudentOverview: React.FC = () => {
@@ -5,6 +6,7 @@ export const StudentOverview: React.FC = () => {
         <div className="">
             <div className="flex items-center justify-between">
                 <h1 className="text-2xl font-bold">Welcome back Student!</h1>
+                <AddCourseModal/>
             </div>
         </div>
     );
